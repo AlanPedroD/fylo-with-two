@@ -9,6 +9,10 @@ html{
     font-family: 'Raleway', sans-serif;
 }
 
+body{
+    background-color: hsl(0, 0%, 75%);
+}
+
 main{
     display: flex;
     justify-content: center;
@@ -17,13 +21,19 @@ main{
 .container{
     max-width: 1440px;
     padding: 50px 50px 0px 50px;
+    background-color: #fff;
 }
 .cabecalho{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
     padding: 60px 60px 20px 60px;
+}
+
+.cabecalho .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cabecalho nav ul{
@@ -34,15 +44,14 @@ main{
 .cabecalho ul li a{
     text-decoration: none;
     margin: 15px;
-    color: #000;
+    color: rgba(0, 0, 0, 0.761);
     transition: 0.5s;
     padding: 3px 5px;
-    font-weight: 500;
-    padding: 3px;
+    font-weight: 600;
 }
 
+
 .cabecalho ul li a:hover{
-    border-bottom: 1px solid hsl(224, 93%, 58%);
     color: hsl(224, 93%, 58%);
 }
 
@@ -103,7 +112,6 @@ main{
     background-color: hsl(224, 93%, 58%);
     color: #fff;
 }
-
 
 
 .artigo-2{
@@ -318,7 +326,7 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 20px;
+        padding: 15px;
     }
 
     .logo img{
@@ -332,6 +340,7 @@ main{
 
     .cabecalho ul li a{
         margin: 6px;
+        font-size: 14px;
     }
 
     h1{
@@ -409,15 +418,27 @@ main{
    
 }
 
-@media (max-width: 425px){
+@media (max-width: 508px){
     .container{
         text-align: center;
         padding: 0;
+        width: 100%;
     }
 
+    .cabecalho{
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cabecalho .menu{
+        margin-left: 10px;
+    }
 
     .artigo-1{
         margin-bottom: 50px;
+        flex-direction: column-reverse;
     }
 
     .botoes{
@@ -432,7 +453,6 @@ main{
     }
 
     .cabecalho ul li a{
-        font-size: 12px;
         margin: 4px;
         padding: 0;
     }
@@ -446,18 +466,35 @@ main{
 
    .artigo-2 {
        background-image: url(../image/bg-curve-mobile.svg);
+       flex-direction: column-reverse;
    }
 
    .paragrafo-especial{
        max-width: 300px;
    }
 
-   .paragrafo-especial p{
+   /* .paragrafo-especial p{
     max-width: 400px;
     font-size: 13px;
     margin-bottom: 15px;
     line-height: 20px;
     text-align: left;
+   } */
+
+   .paragrafo-especial p{
+    max-width: 430px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    text-align: left;
+}
+
+    .paragrafo-especial .icone-aspas{
+        text-align: left;
+    }
+
+   .paragrafo-especial .nome-autor{
+       text-align: left;
    }
 
    .acesso{
@@ -480,13 +517,10 @@ main{
       align-self: center;
   }
 
-  .menu-rodape .canais{
-      margin-bottom: 20px;
-  }
 
-  .menu-rodape .termos{
-      margin-bottom: 20px;
-  }
+.menu-rodape .contatos, .canais, .termos{
+    margin-bottom: 30px;
+}
 
 }
 
@@ -494,5 +528,8 @@ main{
     .menu ul{
         display: flex;
         flex-direction: column;
+        text-align: left;
+        /* margin-left: 5px; */
+        
     }
 }
