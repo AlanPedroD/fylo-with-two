@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 75%);
+    background-color: #fff;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 50px 50px 0px 50px;
+    background-color: #fff;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px 20px 60px;
+}
+
+.cabecalho .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho ul li a{
+    text-decoration: none;
+    margin: 15px;
+    color: rgba(0, 0, 0, 0.761);
+    transition: 0.5s;
+    padding: 3px 5px;
+    font-weight: 600;
+}
+
+.cabecalho ul li a:hover{
+    color: hsl(224, 93%, 58%);
+}
+
+.artigos div{
+    flex: 1;
+}
+
+.artigos{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 60px;
+}
+
+.artigos img{
+    width: 100%;
+}
+
+.artigos h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    max-width: 500px;
+    line-height: 45px;
+}
+
+.artigo-1 p{
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+.artigo-1 .botoes{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.artigo-1 .botoes .email{
+    padding: 7px 25px 7px 10px;
+    border: 1px solid ;
+    border-radius: 3px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.494);
+}
+
+.artigo-1 .submit{
+    text-align: center;
+    padding: 7px 15px 7px 7px;
+    border: 1px solid rgba(0, 0, 0, 0.494);
+    border-radius: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.artigo-1 .submit:hover{
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+}
+
+.artigo-2{
+    display: flex;
+    justify-content: center;
+    background-image: url(../image/bg-curve-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.artigo-2 p{
+    max-width: 550px;
+    margin-bottom: 15px;
+}
+
+.link-p2{
+    margin-bottom: 30px;
+}
+
+.link-p2 a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link-p2 a:hover{
+    color: hsl(176, 68%, 64%);
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+
+.paragrafo-especial{
+    max-width: 330px;
+    border-radius: 5px;
+    padding: 25px;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 5px rgba(130, 124, 124, 0.522);
+    background-color: #fff;
+}
+
+.paragrafo-especial p{
+    max-width: 410px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.paragrafo-especial h4{
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.autor{
+    display: flex;
+    align-items: center;
+}
+
+.nome-autor h5{
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.artigo-2 .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.artigo-2 .paragrafo-2{
+    max-width: 520px;
+}
+
+.acesso{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px 40px 60px;
+    background-color: hsl(238, 22%, 44%);
+}
+
+.acesso h1{
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.acesso p{
+    max-width: 400px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.paragrafo-especial .icone-aspas img{
+    max-width: 18px;
+    max-height: 18px;
+}
+
+.acesso .botoes-acesso form{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes-acesso .email-acesso{
+    margin-bottom: 15px;
+    padding: 7px 50px 7px 7px;
+    border: 1px solid rgba(255, 255, 255, 0.405);
+    border-radius: 3px;
+}
+
+.botoes-acesso .submit-acesso{
+    margin-right: 100px;
+    text-align: center;
+    padding: 7px 15px 7px 7px;
+    border: 1px solid rgba(255, 255, 255, 0.707);
+    border-radius: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.botoes-acesso .submit-acesso:hover{
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+}
+
+.botoes-acesso .submit{
+    margin-right: 50px;
+    padding: 7px;
+}
+
+.rodape{
+    background-color: hsl(243, 87%, 12%);
+    padding: 60px 60px 20px 60px;
+    padding-bottom: 40px;
+}
+
+.logo-rodape{
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.menu-rodape{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 0%, 95%);
+    padding: 5px;
+}
+
+.menu-rodape ul{
+    list-style: none;
+}
+
+.menu-rodape ul li{
+    margin-bottom: 10px;
+}
+
+.menu-rodape ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.menu-rodape ul li a:hover{
+    color: hsl(224, 93%, 58%);
+}
+
+.menu-rodape .contatos .telefone, .gmail{
+    display: flex;
+}
+
+.menu-rodape .contatos .icone-telefone, .icone-gmail{
+    margin-right: 10px;
+}
+
+.icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icones-rodape a i{
+    margin: 0 10px;
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 10px; 
+    width: 35px;
+    height: 35px;
+    transition: 0.3s ease-in-out;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones-rodape a i:hover{
+    /* color: hsl(238, 22%, 44%); */
+    color: hsl(224, 93%, 58%);
+}
+
+@media (max-width: 875px){
+    .container{
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .logo img{
+        width: 136px;
+        height: 40px;
+    }
+
+    .cabecalho{
+        justify-content: space-around;
+    }
+
+    .cabecalho ul li a{
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .artigos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artigo-1{
+        margin-bottom: 50px;
+    }
+
+    .artigo-1 .botoes .email{
+        margin-bottom: 5px;
+    }
+
+    .artigos p{
+        font-size: 14px;
+    }
+
+    .textos-acesso{
+        margin-right: 5px;
+    }
+
+    .textos-acesso h1{
+        font-size: 18px;
+    }
+
+    .acesso p{
+        font-size: 12px;
+        max-width: 350px;
+    }
+
+    .artigos img{
+        max-width: 400px;
+    }
+    
+    .textos{
+        text-align: center;
+    }
+
+    .botoes{
+        justify-content: center;
+    }
+    
+    .paragrafo-especial{
+        max-width: 200px;
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+
+    .paragrafo-especial .autor h4{
+        font-size: 10px;
+    }
+
+    .paragrafo-especial .autor h5{
+        font-size: 9px;
+    }
+
+    .paragrafo-especial p{
+        font-size: 10px;
+        line-height: normal;
+    }
+
+    .menu-rodape{
+        flex-wrap: wrap;
+    }
+
+    .botoes-acesso .submit-acesso{
+        margin-right: 0;
+    }
+   
+}
+
+@media (max-width: 508px){
+    .container{
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cabecalho{
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cabecalho .menu{
+        margin-left: 10px;
+    }
+
+    .artigo-1{
+        margin-bottom: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .botoes{
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .botoes .submit, .email,
+    .botoes-acesso .email-acesso, .submit-acesso{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .cabecalho ul li a{
+        margin: 4px;
+        padding: 0;
+    }
+
+   .textos{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .artigo-2 {
+       background-image: url(../image/bg-curve-mobile.svg);
+       flex-direction: column-reverse;
+   }
+
+   .paragrafo-especial{
+       max-width: 300px;
+   }
+
+   .paragrafo-especial p{
+    max-width: 430px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    text-align: left;
+}
+
+    .paragrafo-especial .icone-aspas{
+        text-align: left;
+    }
+
+   .paragrafo-especial .nome-autor{
+       text-align: left;
+   }
+
+   .acesso{
+       flex-direction: column;
+   }
+
+   .rodape{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .menu-rodape{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+.menu-rodape .contatos, .canais, .termos{
+    margin-bottom: 30px;
+}
+
+}
+
+@media (max-width: 320px){
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: left; 
+    }
+}
